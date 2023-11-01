@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="button-container">
+        <button class="start" id="start" onclick="openPopup()">Начать</button>
+    </div>
+
+    <div class="table-container" id="table-container">
+    </div>
+
+    <div class="container" id="container" onclick="openPopup()">
+        <div class="pop-up">
+            <form class="form" onclick="event.stopPropagation()">
+                <h2 class="title">Форма отправки</h2>
+                <input class="input" type="text" id="last_name" name="last_name" placeholder="Фамилия">
+                <input class="input" type="text" id="first_name" name="first_name" placeholder="Имя">
+                <input class="input" type="text" id="middle_name" name="middle_name" placeholder="Отчество">
+                <input class="input" type="email" id="email" name="email" placeholder="Email">
+                <input class="input" type="phone" id="phone" name="phone" placeholder="Телефон">
+                <input type="submit" placeholder="Отправить">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
